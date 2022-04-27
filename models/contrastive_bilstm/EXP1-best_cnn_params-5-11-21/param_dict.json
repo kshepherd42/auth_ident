@@ -11,7 +11,7 @@
     "batch_size": [1000],
     "binary_encoding": [false],
     "max_code_length": [2000],
-    "embedding_size": [128],
+    "embedding_size": [2000],
     "BN": [false],
     "input_embedding_size": [1],
     "encoding_type": ["spm"],
