@@ -35,10 +35,10 @@
 	"weights": ["distance"],
 	"algorithm": ["brute"],
 	"n_neighbors": [1],
-	"output_layer": ["output_embedding"]
+	"output_layer": ["bidirectional"]
     },{
 	"C": [100],
-	"output_layer": ["output_embedding"]
+	"output_layer": ["bidirectional"]
     }]],
 
     "k_cross_val": [9, 5, 2],

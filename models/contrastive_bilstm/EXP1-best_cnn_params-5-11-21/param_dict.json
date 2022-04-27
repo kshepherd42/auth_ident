@@ -10,21 +10,18 @@
     "epochs": [20],
     "batch_size": [1000],
     "binary_encoding": [false],
-    "max_code_length": [500],
-    "embedding_size": [512],
+    "max_code_length": [2000],
+    "embedding_size": [128],
     "BN": [false],
-    "input_embedding_size": [32],
+    "input_embedding_size": [1],
     "encoding_type": ["spm"],
-    "spm_model_file": ["organized_hdfs/spm_models_fixed/c_cpp_h_program_cc9995_vs4048.model"],
+    "spm_model_file": ["/media/largedisk01/white3rd/auth_ident/data/organized_hdfs/spm_models_fixed/c_cpp_h_program_cc9995_vs4048.model"],
     "bias": [false],
     "dropout": [0.0],
 
-    "train_data":["encoded_data_fixed/c_cpp_h_program_cc9995_vs4048_a0.5_l-1_train.h5"],
-
-    "val_data":["encoded_data_fixed/c_cpp_h_program_cc9995_vs4048_a0.5_l-1_val.h5"],
-
-    "test_data":["encoded_data_fixed/c_cpp_h_program_cc9995_vs4048_a0.5_l-1_test.h5"],
-    "max_authors": [1600],
+    "train_data":["/media/largedisk01/wettstbe/neo_auth_ident/auth_ident/c_cpp_h_program_cc9995_vs4048_a0.5_l-1_test_tfidfs.h5"],
+    "val_data":["/media/largedisk01/wettstbe/neo_auth_ident/auth_ident/c_cpp_h_program_cc9995_vs4048_a0.5_l-1_test_tfidfs.h5"],
+    "test_data":["/media/largedisk01/wettstbe/neo_auth_ident/auth_ident/c_cpp_h_program_cc9995_vs4048_a0.5_l-1_test_tfidfs.h5"],
 
     "model": ["contrastive_bilstm"]
   },

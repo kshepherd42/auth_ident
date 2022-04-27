@@ -8,7 +8,7 @@
     "clip": [1.0],
     "decay": [0.0000025],
     "epochs": [20],
-    "batch_size": [1000],
+    "batch_size": [2000],
     "binary_encoding": [false],
     "max_code_length": [500],
     "embedding_size": [128],
@@ -35,10 +35,10 @@
 	"weights": ["distance"],
 	"algorithm": ["brute"],
 	"n_neighbors": [1],
-	"output_layer": ["output_embedding"]
+	"output_layer": ["bidirectional"]
     },{
 	"C": [100],
-	"output_layer": ["output_embedding"]
+	"output_layer": ["bidirectional"]
     }]],
 
     "k_cross_val": [9, 5, 2],
