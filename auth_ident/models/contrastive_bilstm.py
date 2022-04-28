@@ -28,17 +28,17 @@ class ContrastiveBiLSTM():
                          params["max_code_length"]),
             name='input_2')
 
-        embedding = Embedding(params['dataset'].len_encoding,
-                              params['input_embedding_size'],
-                              input_length=params["max_code_length"])
+        #embedding = Embedding(params['dataset'].len_encoding,
+        #                      params['input_embedding_size'],
+        #                      input_length=params["max_code_length"])
 
-        embedding1 = embedding(input1)
-        embedding2 = embedding(input2)
+        #embedding1 = embedding(input1)
+        #embedding2 = embedding(input2)
 
         lstm = Bidirectional(LSTM(256, name='lstm1'), merge_mode="concat", name="output_embedding")
 
-        lstm1 = lstm(embedding1)
-        lstm2 = lstm(embedding2)
+        lstm1 = lstm(input1) #used to be lstm(embedding1)
+        lstm2 = lstm(input2) #used to be lstm(embedding2)
         lstm_concat = Concatenate(axis=0)([lstm1, lstm2])
 
         #output_embedding = Dense(params['embedding_size'], 
